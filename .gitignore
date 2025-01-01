@@ -1,0 +1,56 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+debug.log
+*.pid
+*.seed
+*.pid.lock
+
+# Build directories
+build/
+dist/
+out/
+
+# Dependency directories
+bower_components/
+
+# Testing
+coverage/
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# React-specific files
+*.cache
+.eslintcache
+public/static/
+
+# Temporary files
+tmp/
+temp/
+
+# Backend uploads and files
+uploads/
