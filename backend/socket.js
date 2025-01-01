@@ -1,5 +1,5 @@
 import { Server } from 'socket.io';
-import { getUsers, setUser, removeUser, getAllUsers } from '../utils/userStore';
+import { getUsers, setUser, removeUser, getAllUsers } from './utils/userStore';
 
 const ioHandler = (req, res) => {
   if (!res.socket.server.io) {
