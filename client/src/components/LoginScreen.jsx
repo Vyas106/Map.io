@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronRight, Activity, Globe, ArrowRight, Users, Shield, Bell, Search } from 'lucide-react';
+import Logo from './Logo';
 
 const HeroSection = ({ onLogin }) => {
   const [username, setUsername] = useState('');
@@ -34,8 +35,11 @@ const HeroSection = ({ onLogin }) => {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300 cursor-pointer">
-                <Globe className="w-5 h-5 text-white animate-spin-slow" />
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br  flex items-center justify-center  shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300 cursor-pointer">
+                {/* <Globe className="w-5 h-5 text-white animate-spin-slow" />
+                 */}
+
+                 <Logo/>
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                 OpenTrack
@@ -47,7 +51,7 @@ const HeroSection = ({ onLogin }) => {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
               <input
                 type="text"
-                placeholder="Search features..."
+                placeholder="Search..."
                 className="w-full pl-10 pr-4 py-2 rounded-full border border-gray-200 bg-gray-50/50 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"
                 onFocus={() => setIsSearchFocused(true)}
                 onBlur={() => setIsSearchFocused(false)}
@@ -63,7 +67,7 @@ const HeroSection = ({ onLogin }) => {
               </button>
               
               <button className="text-gray-600 hover:text-blue-600 transition-colors hover:scale-105">Features</button>
-              <button className="text-gray-600 hover:text-blue-600 transition-colors hover:scale-105">Pricing</button>
+              <button className="text-gray-600 hover:text-blue-600 transition-colors hover:scale-105">Open Source</button>
               <button className="px-5 py-2 rounded-full text-blue-600 hover:text-blue-700 hover:bg-blue-50 transition-all border border-blue-100 hover:border-blue-200 hover:scale-105">
                 Documentation
               </button>
@@ -79,10 +83,10 @@ const HeroSection = ({ onLogin }) => {
           <div className="flex-1 space-y-12">
             <div className="space-y-6">
               <h1 className="text-6xl font-bold leading-tight">
-                The fastest, most
+                OpenTrack
                 <div className="relative inline-block mt-2">
                   <span className="relative z-10 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                    precise traffic tool
+                  Real-Time Tracking and Smarter Routes
                   </span>
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-blue-800 animate-pulse" />
                 </div>
@@ -120,8 +124,8 @@ const HeroSection = ({ onLogin }) => {
                 </div>
               </div>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Transform your transportation operations with AI-powered
-                <br />real-time tracking and optimization system
+                Transform your transportation operations with
+                <br />real-time tracking and optimization system.
               </p>
               
               {/* Feature Pills */}
