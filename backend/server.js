@@ -10,8 +10,8 @@ const geolib = require('geolib');
 const moment = require('moment');
 
 // Environment variables for configuration
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/trafficDB';
-const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || 'http://localhost:5173';
+const MONGODB_URI = process.env.MONGODB_URI || '';
+// const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || 'http://localhost:5173';
 const PORT = process.env.PORT || 4000;
 const NEARBY_INCIDENT_RADIUS_METERS = 5000;
 const CONGESTION_UPDATE_INTERVAL_MS = 5 * 60 * 1000;
@@ -20,7 +20,8 @@ const RECENT_TRAFFIC_WINDOW_MINUTES = 5;
 // Initialize Express app with security middleware
 const app = express();
 app.use(cors({
-  origin: CLIENT_ORIGIN,
+  // origin: CLIENT_ORIGIN,
+  origin: '*',
   methods: ['GET', 'POST'],
   credentials: true
 }));
