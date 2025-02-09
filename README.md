@@ -345,9 +345,9 @@ docker run -p 3000:3000 opensocie
 - [Twitter](https://twitter.com/opensocie)
 
 ### Support Channels
-- Documentation: [docs.opensocie.org](https://docs.opensocie.org)
-- Issues: [GitHub Issues](https://github.com/opensocie/opensocie/issues)
-- Email: support@opensocie.org
+- whatsapp: [whatsapp Link](https://chat.whatsapp.com/DzmSbITOAsAJbO8RMJ3uQg)
+- Issues: [GitHub Issues](https://github.com/Vyas106/Map.io)
+- Email: vyasvishal.dev@gmail.com
 - Community Forums: [forums.opensocie.org](https://forums.opensocie.org)
 
 ---
